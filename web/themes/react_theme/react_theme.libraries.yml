@@ -1,0 +1,39 @@
+# react_app:
+#   version: VERSION
+#   js:
+#     js/dist/main.min.js: {minified: true}
+
+# react_app_dev:
+#   version: VERSION
+#   js:
+#     js/dist_dev/main.min.js: {minified: true}
+# libraries:
+#   - react_theme/react_app
+
+# global-styling:
+#   css:
+#     theme:
+#       css/style.css: {}
+#   js:
+#     js/dist/main.min.js: {}
+
+
+react_app:
+  version: VERSION
+  js:
+    js/dist/main.min.js: { minified: true }
+
+react_app_dev:
+  version: VERSION
+  js:
+    js/dist_dev/main.min.js: { minified: true }
+
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      css/style.css: {}
+  js:
+    js/dist/main.min.js: {}
+  dependencies:
+    - core/jquery

@@ -1,0 +1,31 @@
+.topics {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .topics button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .questions .question {
+    margin-bottom: 20px;
+  }
+  
+  .questions .question h3 {
+    cursor: pointer;
+  }
+  
+  /* .questions .question p {
+    display: none;
+  }
+   */
+  .questions .question.active p {
+    display: block;
+  }
+  
