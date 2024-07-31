@@ -1,5 +1,6 @@
 
 
+
 const path = require('path');
 const isDevMode = process.env.NODE_ENV !== 'production';
 
@@ -23,10 +24,15 @@ const config = {
         loader: 'babel-loader',
         exclude: /node_modules/,
         include: path.join(__dirname, 'js/src'),
-      }
+      },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
     ],
   },
 };
 
 module.exports = config;
+
 
