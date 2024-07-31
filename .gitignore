@@ -46,3 +46,4 @@ drush.phar
 drush
 drupal.phar
 drupal
+themes/my_theme/js/dist_dev
