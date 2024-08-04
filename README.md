@@ -36,7 +36,8 @@ Navigate to the project directory.
   
 Run the following command to start the DDEV environment:
 
-  
+    composer install
+
      ddev start
     
 
