@@ -33,18 +33,24 @@ Ensure you have the following installed on your machine:
 Navigate to the project directory.
    
     cd Drupal-QA-Project
-  
+    
+Installing Dependencies with Composer
+
+     composer install
+
+     
 Run the following command to start the DDEV environment:
 
-    composer install
+   
 
      ddev start
     
 
 ### 4. Access the Application
 Open your web browser and navigate to the local URL provided by DDEV (usually
-    
     https://linnovate.ddev.site:8443
+and 
+    https://linnovate.ddev.site:8443/questions-list
    
 ).
 
