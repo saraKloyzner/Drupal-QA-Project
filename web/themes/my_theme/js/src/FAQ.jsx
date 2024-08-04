@@ -1,5 +1,4 @@
 
-
 import React, { useState, useEffect } from "react";
 import {
   Accordion,
@@ -16,9 +15,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import InfoIcon from "@mui/icons-material/Info";
 import CategoryIcon from "@mui/icons-material/Category";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
-
-import {  grey } from "@mui/material/colors";
-
+import { grey } from "@mui/material/colors";
 
 const theme = createTheme({
   palette: {
@@ -91,6 +88,23 @@ const FAQ = () => {
     }
   };
 
+  const renderHTMLWithCustomListItems = (htmlString) => {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(htmlString, 'text/html');
+    const listItems = doc.querySelectorAll('li');
+    listItems.forEach((li) => {
+      const customLi = document.createElement('li');
+      customLi.style.backgroundColor = 'white';
+      customLi.style.color = 'inherit';
+      customLi.style.listStyleType = 'none';
+      customLi.style.padding = '8px';
+      customLi.style.marginBottom = '4px';
+      customLi.innerHTML = li.innerHTML;
+      li.replaceWith(customLi);
+    });
+    return doc.body.innerHTML;
+  };
+
   return (
     <ThemeProvider theme={theme}>
       <Box
@@ -129,7 +143,7 @@ const FAQ = () => {
 
         <Container>
           <Box my={4}>
-            <h1 className="title" >AI?</h1>
+            <h1 className="title">AI?</h1>
             <Box
               mb={4}
               display="flex"
@@ -192,7 +206,6 @@ const FAQ = () => {
                 >
                   <Typography
                     variant="body1"
-                    className="faq-answer"
                     sx={{
                       color: grey[800],
                       fontFamily: '"Poppins", sans-serif',
@@ -200,10 +213,9 @@ const FAQ = () => {
                   >
                     <div
                       dangerouslySetInnerHTML={{
-                        __html:
-                          question.attributes.body && question.attributes.body.value
-                            ? question.attributes.body.value
-                            : "No body value found",
+                        __html: renderHTMLWithCustomListItems(question.attributes.body && question.attributes.body.value
+                          ? question.attributes.body.value
+                          : "No body value found"),
                       }}
                     />
                   </Typography>
