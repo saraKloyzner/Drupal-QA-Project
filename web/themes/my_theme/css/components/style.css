@@ -1,8 +1,109 @@
 
+
 .title {
   font-family: 'Poppins';
   font-size: 100px;
-  /* font-weight: bold; */
   color: #2979ff;
   text-shadow: 3px 4px 4px rgba(1, 1, 1, 1);
+}
+
+.field {
+  font-size: 100%;
+  color: black;
+  text-decoration-color: black;
+  font-weight: bold;
+
+}
+
+img {
+  display: none;
+}
+
+a{
+ font-weight: bold;
+ text-decoration: none;
+}
+.layout-container {
+  background-image: url('../../public/images/background1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: brightness(1.6);
+  z-index: -1;
+ 
+}
+
+
+
+.node--view-mode-teaser {
+  background-color: azure;
+  border-radius: 10px;
+  margin-left: 10%;
+  padding: 10px;
+  margin-right: 10%;
+  margin-top: 2%;
+  padding: 10px;
+  border: 2px solid #2979ff;
+}
+
+.node__submitted .datetime {
+  font-size: 80%;
+
+}
+
+ul {
+  list-style-type: none;
+
+  padding: 0;
+
+  display: flex;
+ 
+}
+
+li {
+  background-color: #2979ff;
+
+  color: black;
+ 
+  padding: 10px 15px;
+
+  margin-right: 10px;
+
+  border-radius: 5px;
+
+}
+
+.page-title {}
+
+.search-block-form {
+  display: none;
+}
+
+.search-block-form--2 {
+  display: none;
+}
+
+ol {
+  display: none;
+}
+
+span {
+  font-size: 80%;
+}
+
+.bef-exposed-form .form--inline > .form-item, .bef-exposed-form .form--inline .js-form-wrapper > .form-item {
+
+  position: relative;
+  left: 25%;
+}
+.field__label {
+  display: none;
+}
+
+h1, h2, h3, p {
+  font-family: 'Arial', sans-serif;
 }

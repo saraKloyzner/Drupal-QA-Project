@@ -1,0 +1,23 @@
+uuid: 931066c6-7aec-423c-9386-a5eb3af9962b
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - my_Quest_react
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: my_Quest_react_search_form_wide
+theme: my_Quest_react
+region: secondary_menu
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

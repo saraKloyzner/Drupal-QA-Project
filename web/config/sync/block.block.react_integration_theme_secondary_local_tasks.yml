@@ -1,0 +1,22 @@
+uuid: 224bb939-f7d4-4ace-b071-56c5eb8e731e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - react_integration_theme
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: react_integration_theme_secondary_local_tasks
+theme: react_integration_theme
+region: highlighted
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

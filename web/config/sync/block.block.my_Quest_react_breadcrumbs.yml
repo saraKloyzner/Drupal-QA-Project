@@ -1,0 +1,22 @@
+uuid: 509e01ee-54ba-447a-b2f0-45e418944094
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - my_Quest_react
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: my_Quest_react_breadcrumbs
+theme: my_Quest_react
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

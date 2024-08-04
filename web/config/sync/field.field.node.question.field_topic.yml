@@ -1,0 +1,29 @@
+uuid: 863160b5-e443-4d04-8f63-2ac3473242cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_topic
+    - node.type.question
+    - taxonomy.vocabulary.tags
+id: node.question.field_topic
+field_name: field_topic
+entity_type: node
+bundle: question
+label: Topic
+description: 'Choose the appropriate topic for this question'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

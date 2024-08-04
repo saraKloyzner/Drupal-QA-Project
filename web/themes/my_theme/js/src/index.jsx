@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import FAQMui from './FAQMui.jsx';
+import FAQ from './FAQ.jsx';
 
-ReactDOM.render(<FAQMui />, document.getElementById('react-app'));
+ReactDOM.render(<FAQ />, document.getElementById('react-app'));

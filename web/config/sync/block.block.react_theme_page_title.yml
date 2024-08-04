@@ -1,0 +1,20 @@
+uuid: a3d1349d-2323-44cc-9fca-7dab9c071fbf
+langcode: en
+status: true
+dependencies:
+  theme:
+    - react_theme
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: react_theme_page_title
+theme: react_theme
+region: sidebar_first
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

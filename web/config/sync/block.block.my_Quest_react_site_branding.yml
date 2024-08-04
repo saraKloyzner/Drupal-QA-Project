@@ -1,0 +1,25 @@
+uuid: 76a1b851-5a3f-461e-95f1-0d29be21e18c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - my_Quest_react
+_core:
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: my_Quest_react_site_branding
+theme: my_Quest_react
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

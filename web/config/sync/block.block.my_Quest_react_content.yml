@@ -1,0 +1,22 @@
+uuid: f202286f-29fd-429d-a058-3aef1d0474b8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - my_Quest_react
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: my_Quest_react_content
+theme: my_Quest_react
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 90ddb8a0-5dbe-427b-9185-c5c3dcd0b42f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - react_integration_theme
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: react_integration_theme_breadcrumbs
+theme: react_integration_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

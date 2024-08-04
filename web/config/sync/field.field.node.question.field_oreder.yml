@@ -1,0 +1,22 @@
+uuid: 02729e85-3f4f-4556-97a3-0c1ce7575e34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oreder
+    - node.type.question
+  module:
+    - weight
+id: node.question.field_oreder
+field_name: field_oreder
+entity_type: node
+bundle: question
+label: Order
+description: 'Enter the order of presentation of the question'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  range: '20'
+field_type: weight

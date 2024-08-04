@@ -1,0 +1,22 @@
+uuid: 80e1c268-05bd-4e8d-8a87-05d65ade09bb
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - my_Quest_react
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: my_Quest_react_help
+theme: my_Quest_react
+region: sidebar_first
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

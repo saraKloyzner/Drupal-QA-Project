@@ -1,0 +1,22 @@
+uuid: 15d539e9-29c5-4fe6-9cf4-cbd7900a0fcb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - my_Quest_react
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: my_Quest_react_powered
+theme: my_Quest_react
+region: sidebar_first
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }
