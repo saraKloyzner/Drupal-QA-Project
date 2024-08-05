@@ -177,7 +177,6 @@ const FAQ = () => {
               ))}
             </Box>
             <Typography variant="h4" gutterBottom>
-              {/* Questions */}
             </Typography>
             {filteredQuestions.map((question) => (
               <Accordion
